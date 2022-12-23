@@ -47,7 +47,7 @@ Partial Class Penjualan_Obat
         Me.Bayar = New System.Windows.Forms.TextBox()
         Me.Label31 = New System.Windows.Forms.Label()
         Me.DtPenjualan = New System.Windows.Forms.DateTimePicker()
-        Me.TglPinjam = New System.Windows.Forms.Label()
+        Me.Tglpenjualan = New System.Windows.Forms.Label()
         Me.HargaObat = New System.Windows.Forms.Label()
         Me.JenisObat = New System.Windows.Forms.Label()
         Me.KodeObat = New System.Windows.Forms.Label()
@@ -88,7 +88,8 @@ Partial Class Penjualan_Obat
         '
         'GroupBox1
         '
-        Me.GroupBox1.BackColor = System.Drawing.Color.Gainsboro
+        Me.GroupBox1.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.GroupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.GroupBox1.Controls.Add(Me.AlamatPembeli)
         Me.GroupBox1.Controls.Add(Me.NamaPembeli)
         Me.GroupBox1.Controls.Add(Me.KodePembeli)
@@ -326,15 +327,15 @@ Partial Class Penjualan_Obat
         Me.DtPenjualan.Size = New System.Drawing.Size(85, 20)
         Me.DtPenjualan.TabIndex = 82
         '
-        'TglPinjam
+        'Tglpenjualan
         '
-        Me.TglPinjam.AutoSize = True
-        Me.TglPinjam.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TglPinjam.Location = New System.Drawing.Point(532, 77)
-        Me.TglPinjam.Name = "TglPinjam"
-        Me.TglPinjam.Size = New System.Drawing.Size(84, 15)
-        Me.TglPinjam.TabIndex = 66
-        Me.TglPinjam.Text = "Tgl Penjualan"
+        Me.Tglpenjualan.AutoSize = True
+        Me.Tglpenjualan.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Tglpenjualan.Location = New System.Drawing.Point(532, 77)
+        Me.Tglpenjualan.Name = "Tglpenjualan"
+        Me.Tglpenjualan.Size = New System.Drawing.Size(84, 15)
+        Me.Tglpenjualan.TabIndex = 66
+        Me.Tglpenjualan.Text = "Tgl Penjualan"
         '
         'HargaObat
         '
@@ -596,7 +597,7 @@ Partial Class Penjualan_Obat
         Me.Controls.Add(Me.Bayar)
         Me.Controls.Add(Me.Label31)
         Me.Controls.Add(Me.DtPenjualan)
-        Me.Controls.Add(Me.TglPinjam)
+        Me.Controls.Add(Me.Tglpenjualan)
         Me.Controls.Add(Me.HargaObat)
         Me.Controls.Add(Me.JenisObat)
         Me.Controls.Add(Me.KodeObat)
@@ -657,7 +658,7 @@ Partial Class Penjualan_Obat
     Friend WithEvents Bayar As TextBox
     Friend WithEvents Label31 As Label
     Friend WithEvents DtPenjualan As DateTimePicker
-    Friend WithEvents TglPinjam As Label
+    Friend WithEvents Tglpenjualan As Label
     Friend WithEvents HargaObat As Label
     Friend WithEvents JenisObat As Label
     Friend WithEvents KodeObat As Label

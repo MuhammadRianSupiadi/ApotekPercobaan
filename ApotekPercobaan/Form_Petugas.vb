@@ -2,11 +2,11 @@
 Public Class Form_Petugas
     Sub Tampil()
         Call OpenConn()
-        'Call KodeOtomatis()
         Da = New MySqlDataAdapter("select * from petugas", Conn)
         Ds = New DataSet
         Da.Fill(Ds, "petugas")
         Dg_Petugas.DataSource = Ds.Tables("petugas")
+        Dg_Petugas.AlternatingRowsDefaultCellStyle.BackColor = Color.BlanchedAlmond
         txt_kdpetugas.Text = ""
         txt_namapetugas.Text = ""
         txt_password.Text = ""

@@ -32,6 +32,8 @@ Partial Class Menu_Utama
         Me.PENJULAN_OBAT = New System.Windows.Forms.ToolStripMenuItem()
         Me.Pembelian = New System.Windows.Forms.ToolStripMenuItem()
         Me.LAPORAN = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Laporan_Pembelian = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Laporan_penjualan = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -39,12 +41,13 @@ Partial Class Menu_Utama
         '
         Me.MenuStrip.BackColor = System.Drawing.Color.Transparent
         Me.MenuStrip.Dock = System.Windows.Forms.DockStyle.None
-        Me.MenuStrip.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MenuStrip.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Master, Me.TRANSAKSI, Me.LAPORAN})
+        Me.MenuStrip.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow
         Me.MenuStrip.Location = New System.Drawing.Point(9, 9)
         Me.MenuStrip.Name = "MenuStrip"
         Me.MenuStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional
-        Me.MenuStrip.Size = New System.Drawing.Size(308, 27)
+        Me.MenuStrip.Size = New System.Drawing.Size(357, 30)
         Me.MenuStrip.TabIndex = 0
         Me.MenuStrip.Text = "MenuStrip"
         '
@@ -54,55 +57,68 @@ Partial Class Menu_Utama
         Me.Master.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Login, Me.KELUAR, Me.PETUGAS})
         Me.Master.ForeColor = System.Drawing.Color.Black
         Me.Master.Name = "Master"
-        Me.Master.Size = New System.Drawing.Size(89, 23)
+        Me.Master.Size = New System.Drawing.Size(104, 26)
         Me.Master.Text = "MASTER"
         '
         'Login
         '
         Me.Login.ImageTransparentColor = System.Drawing.Color.Transparent
         Me.Login.Name = "Login"
-        Me.Login.Size = New System.Drawing.Size(150, 24)
+        Me.Login.Size = New System.Drawing.Size(170, 26)
         Me.Login.Text = "LOGIN"
         '
         'KELUAR
         '
         Me.KELUAR.Name = "KELUAR"
-        Me.KELUAR.Size = New System.Drawing.Size(150, 24)
+        Me.KELUAR.Size = New System.Drawing.Size(170, 26)
         Me.KELUAR.Text = "KELUAR"
         '
         'PETUGAS
         '
         Me.PETUGAS.Name = "PETUGAS"
-        Me.PETUGAS.Size = New System.Drawing.Size(150, 24)
+        Me.PETUGAS.Size = New System.Drawing.Size(170, 26)
         Me.PETUGAS.Text = "PETUGAS"
         '
         'TRANSAKSI
         '
+        Me.TRANSAKSI.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.TRANSAKSI.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PENJULAN_OBAT, Me.Pembelian})
         Me.TRANSAKSI.ForeColor = System.Drawing.Color.Black
         Me.TRANSAKSI.Name = "TRANSAKSI"
-        Me.TRANSAKSI.Size = New System.Drawing.Size(113, 23)
+        Me.TRANSAKSI.Size = New System.Drawing.Size(132, 26)
         Me.TRANSAKSI.Text = "TRANSAKSI"
         '
         'PENJULAN_OBAT
         '
-        Me.PENJULAN_OBAT.Image = CType(resources.GetObject("PENJULAN_OBAT.Image"), System.Drawing.Image)
         Me.PENJULAN_OBAT.Name = "PENJULAN_OBAT"
-        Me.PENJULAN_OBAT.Size = New System.Drawing.Size(220, 24)
+        Me.PENJULAN_OBAT.Size = New System.Drawing.Size(253, 26)
         Me.PENJULAN_OBAT.Text = "PENJUALAN OBAT"
         '
         'Pembelian
         '
         Me.Pembelian.Name = "Pembelian"
-        Me.Pembelian.Size = New System.Drawing.Size(220, 24)
+        Me.Pembelian.Size = New System.Drawing.Size(253, 26)
         Me.Pembelian.Text = "PEMBELIAN OBAT"
         '
         'LAPORAN
         '
+        Me.LAPORAN.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Laporan_Pembelian, Me.Laporan_penjualan})
         Me.LAPORAN.ForeColor = System.Drawing.Color.Black
         Me.LAPORAN.Name = "LAPORAN"
-        Me.LAPORAN.Size = New System.Drawing.Size(98, 23)
+        Me.LAPORAN.Size = New System.Drawing.Size(115, 26)
         Me.LAPORAN.Text = "LAPORAN"
+        '
+        'Laporan_Pembelian
+        '
+        Me.Laporan_Pembelian.Name = "Laporan_Pembelian"
+        Me.Laporan_Pembelian.Size = New System.Drawing.Size(293, 26)
+        Me.Laporan_Pembelian.Text = "LAPORAN PEMBELIAN"
+        '
+        'Laporan_penjualan
+        '
+        Me.Laporan_penjualan.Name = "Laporan_penjualan"
+        Me.Laporan_penjualan.Size = New System.Drawing.Size(293, 26)
+        Me.Laporan_penjualan.Text = "LAPORAN PENJUALAN"
         '
         'Menu_Utama
         '
@@ -111,7 +127,7 @@ Partial Class Menu_Utama
         Me.BackColor = System.Drawing.Color.White
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(744, 450)
         Me.Controls.Add(Me.MenuStrip)
         Me.DoubleBuffered = True
         Me.MainMenuStrip = Me.MenuStrip
@@ -135,4 +151,6 @@ Partial Class Menu_Utama
     Friend WithEvents KELUAR As ToolStripMenuItem
     Friend WithEvents PETUGAS As ToolStripMenuItem
     Friend WithEvents Pembelian As ToolStripMenuItem
+    Friend WithEvents Laporan_Pembelian As ToolStripMenuItem
+    Friend WithEvents Laporan_penjualan As ToolStripMenuItem
 End Class

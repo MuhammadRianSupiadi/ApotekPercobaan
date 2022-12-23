@@ -81,7 +81,7 @@ Public Class Penjualan_Obat
         Call Mati()
         Call NoOtomatis()
         Call MunculNamaObat()
-        TglPinjam.Text = Today
+        Tglpenjualan.Text = Today
         KodePetugas.Text = FormLogin.txt_petugas.Text
     End Sub
 

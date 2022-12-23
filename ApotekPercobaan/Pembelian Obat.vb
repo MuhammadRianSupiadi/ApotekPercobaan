@@ -177,4 +177,15 @@ Public Class Form_Pembelian
             End If
         End If
     End Sub
+
+    Private Sub TxtCari_TextChanged(sender As Object, e As EventArgs) Handles TxtCari.TextChanged
+        Call OpenConn()
+        Da = New MySqlDataAdapter("select * from pembelian_obat where nama_obat like '%" & TxtCari.Text & "%'", Conn)
+        Ds = New DataSet
+        Ds.Clear()
+        Da.Fill(Ds, "pembelian_obat")
+        dg_Pembelian_Obat.DataSource = Ds.Tables("pembelian_obat")
+        dg_Pembelian_Obat.AllowUserToAddRows = False
+        dg_Pembelian_Obat.ReadOnly = True
+    End Sub
 End Class

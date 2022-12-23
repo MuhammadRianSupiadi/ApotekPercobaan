@@ -169,7 +169,7 @@ Partial Class Form_Pembelian
         'txt_kodeobat
         '
         Me.txt_kodeobat.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_kodeobat.Location = New System.Drawing.Point(129, 96)
+        Me.txt_kodeobat.Location = New System.Drawing.Point(129, 97)
         Me.txt_kodeobat.Name = "txt_kodeobat"
         Me.txt_kodeobat.Size = New System.Drawing.Size(195, 21)
         Me.txt_kodeobat.TabIndex = 8
@@ -177,7 +177,7 @@ Partial Class Form_Pembelian
         'txt_namaobat
         '
         Me.txt_namaobat.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_namaobat.Location = New System.Drawing.Point(129, 129)
+        Me.txt_namaobat.Location = New System.Drawing.Point(129, 130)
         Me.txt_namaobat.Name = "txt_namaobat"
         Me.txt_namaobat.Size = New System.Drawing.Size(195, 21)
         Me.txt_namaobat.TabIndex = 9
@@ -255,7 +255,7 @@ Partial Class Form_Pembelian
         Me.dtpembelian.CustomFormat = "dd/MM/yyyy"
         Me.dtpembelian.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtpembelian.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpembelian.Location = New System.Drawing.Point(129, 159)
+        Me.dtpembelian.Location = New System.Drawing.Point(129, 163)
         Me.dtpembelian.Name = "dtpembelian"
         Me.dtpembelian.Size = New System.Drawing.Size(195, 21)
         Me.dtpembelian.TabIndex = 18
@@ -309,7 +309,7 @@ Partial Class Form_Pembelian
         Me.dtExp.CustomFormat = "dd/MM/yyyy"
         Me.dtExp.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtExp.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtExp.Location = New System.Drawing.Point(129, 191)
+        Me.dtExp.Location = New System.Drawing.Point(129, 196)
         Me.dtExp.Name = "dtExp"
         Me.dtExp.Size = New System.Drawing.Size(195, 21)
         Me.dtExp.TabIndex = 26
@@ -354,7 +354,7 @@ Partial Class Form_Pembelian
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(109, 257)
+        Me.Label11.Location = New System.Drawing.Point(109, 261)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(14, 19)
         Me.Label11.TabIndex = 40
